@@ -1,0 +1,17 @@
+<% layout ('boilerplate') %>  
+
+<div class="row justify-content-center">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="/img/char_<%= hero.class %>.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"><%= hero.name %></h5>
+        <p class="card-text">
+          <ul>
+            <li>Level: 1</li>
+            <li>Class: <%= hero.class %> </li>
+          </ul>
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>

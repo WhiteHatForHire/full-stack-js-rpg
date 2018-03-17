@@ -3,9 +3,11 @@ var bodyParser = require("body-parser");
 var ejs = require('ejs');
 var engine = require('ejs-mate');
 
+
 var app = express();
 
 var secret = require("./config/secret");
+
 
 
 
@@ -21,6 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Pass in app to the required file
 require('./routes/main')(app);
 
+
 app.listen(secret.port, function(err) {
   if (err) {
     console.log(err);
@@ -28,3 +31,4 @@ app.listen(secret.port, function(err) {
     console.log(`running on port ${secret.port}`);
   }
 });
+
